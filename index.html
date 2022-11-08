@@ -10,21 +10,21 @@
     <title>Agency Landing</title>
 </head>
 <body class="root">
-    <div class="header-wrapper">
+    <div class="page">
     <header class="header">
         <nav class="site-menu"> 
-            <ul class="menu-list">     
-                <li class="menu-list-li">
-                    <a class="menu-link-home menu-active" href="#">Home</a>
+            <ul class="site-menu__list">     
+                <li class="site-menu__item">
+                    <a class="site-menu__link-home site-menu__active" href="#">Home</a>
                 </li>
-                <li class="menu-list-li">
-                    <a class="menu-link-portfolio" href="#">Portfolio</a>
+                <li class="site-menu__item">
+                    <a class="site-menu__link-portfolio" href="#">Portfolio</a>
                 </li>
-                <li class="menu-list-li">
-                    <a class="menu-link" href="#">About us</a>
+                <li class="site-menu__item">
+                    <a class="site-menu__link" href="#">About us</a>
                 </li>
-                <li class="menu-list-li">
-                    <a class="menu-link" href="#">Contact</a>
+                <li class="site-menu__item">
+                    <a class="site-menu__link" href="#">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -32,22 +32,59 @@
     </div>
     <div class="intro-wrapper">
         <section class="intro">
-            <div class="intro-info">
-            <h2 class="intro-heading">Our strong
-                 <span class="intro-special">organization</span>
+            <div class="intro__info">
+            <h2 class="intro__heading">Our strong
+                 <span class="intro__special">organization</span>
             </h2>
-            <p class="intro-text">Lorem ipsum dolor sit amet, 
+            <p class="intro__text">Lorem ipsum dolor sit amet, 
                 consectetur adipis cing elit, sed do eiusmod tempor
                 incididunt ut labore et. ectetur adig ipis cing 
                 elit, sed do eiusmod tempor incididunt.</p>
-            <a class="intro-action" href="#">Contact Us</a>
+            <a class="intro__action" href="#">Contact Us</a>
             </div>
-            <video class="intro-video" preload="auto" muted autoplay loop controls poster="./images/intro-video.jpg">
-                <source src="./video/business.mp4" type="video/mp4">
+            <video class="intro__video" preload="auto" muted autoplay 
+            loop controls poster="./images/intro-video.jpg">
+                <source class="intro__video_source" src="./video/business.mp4" type="video/mp4">
                 Обновите браузер!
-                <a href="./video/business.mp4">Видео по ссылке</a>
+                <a class="intro__video_link" href="./video/business.mp4">Видео по ссылке</a>
             </video>
         </section>
     </div>
+    <section class="services">
+        <div class="services__info">
+            <h2 class="services__heading">do you know we can provide for you ?</h2>
+            <p class="services__about">Lorem ipsum dolor sit amet, consectetur
+                 adipis cing elit, sed do eiusmod tempor incididunt ut labore 
+                 et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit,
+                 ed doi eiusmod tempor incididunt ut labore et.</p>
+            <a class="services__link" href="#">Learn More</a>
+        </div>
+            <div class="services__items">
+                <div class="services__item_managment">
+                    <h3 class="services__title services__item_icon_managment">Management</h3>
+                    <p class="services__text">Lorem ipsum dolor sitea amet,
+                         zixf conseit  adipi cing elit, seddi do eiusmod btdempor
+                          in didunt utlae ore etioe.Lorem ipsum new idolor</p>
+                </div>
+                <div class="services__item_design">
+                    <h3 class="services__title services__item_icon_design">UI /UX Design</h3>
+                    <p class="services__text">Lorem ipsum dolor sitea amet,
+                         zixf conseit  adipi cing elit, seddi do eiusmod btdempor
+                          in didunt utlae ore etioe.Lorem ipsum new idolor</p>
+                </div>
+                <div class="services__item_branding">
+                    <h3 class="services__title services__item_icon_branding">Logo / Branding</h3>
+                    <p class="services__text">Lorem ipsum dolor sitea amet, 
+                        zixf conseit  adipi cing elit, seddi do eiusmod btdempor 
+                        in didunt utlae ore etioeew idolor sit amet,</p>
+                </div>
+                <div class="services__item_animation">
+                    <h3 class="services__title services__item_icon_animation">Animation</h3>
+                    <p class="services__text">Lorem ipsum dolor sitea amet, 
+                        zixf conseit  adipi cing elit, seddi do eiusmod btdempor 
+                        in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</p>
+                </div>            
+            </div>
+    </section>
 </body>
 </html>
