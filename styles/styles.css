@@ -164,7 +164,7 @@
     width: 1251px;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 98px 0 77px;
+    padding: 98px 0 62px;
     border-bottom: 2px solid #ececec;
     box-sizing: border-box;    
 }
@@ -218,19 +218,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;   
-    width: 610px;     
+    width: 610px; 
+    list-style: none;    
 }
 
 .services__item_managment {
-    width: 303px; 
-    margin: 10px 0 0 0;
+    width: 303px;
+    margin: 0; 
+    margin-top: -5px;
     box-sizing: border-box;
 }
 
 .services__item_design {
-    width: 290px; 
-    margin: 10px 0 0 0; 
-    padding: 0;       
+    width: 290px;
+    margin: 0; 
+    margin-top: -5px;        
     box-sizing: border-box;
 }
 
