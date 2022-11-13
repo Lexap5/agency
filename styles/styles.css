@@ -5,24 +5,19 @@
     font-size: 16px;
 }
 /* Header */
-.page {
+.header {
     display: flex;
     padding-top: 29px;
     background-color: #F6F2F2;
 }
 
-.header {
+.site-menu {
     display: flex;
     width: 1249px;
     min-height: 89px;
     justify-content: center;
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.8);
-}
-
-.site-menu {
-    display: flex;
-    margin-left: -50px;    
+    background-color: rgba(0,0,0,0.8);   
 }
 
 .site-menu__list {
@@ -31,40 +26,13 @@
     justify-content: center; 
     margin: 0;
     padding: 0;
+    margin-left: -50px;
     list-style: none;
 }
 
 .site-menu__item {
     display: flex;
     min-height: 89px;
-}
-
-.site-menu__link-home {
-    display: flex;
-    align-items: center;    
-    padding: 12px 23px 0 23px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #E0E0E0;
-    letter-spacing: 0.5px;
-    transition: .3s ease;       
-}
-
-.site-menu__link-portfolio {
-    display: flex;
-    align-items: center;    
-    padding: 12px 24px 0 45px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #E0E0E0;
-    letter-spacing: 0.5px;
-    transition: .3s ease;       
 }
 
 .site-menu__link {
@@ -77,12 +45,11 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #E0E0E0;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.2px;
     transition: .3s ease;       
 }
 
-.site-menu__link:hover,.site-menu__link-portfolio:hover,
-.site-menu__link-home:hover {
+.site-menu__link:hover {
     background-color: #ff3f40;
     transition: .3s ease;
 }
@@ -93,22 +60,22 @@
 
 /* Main */
 /* Intro */
-.intro-wrapper {
+.intro {
     display: block;
     width: 100%;
     background-color: #F6F2F2;
-    padding: 102px 0 110px;    
+    padding: 102px 0 110px;     
 }
 
-.intro {
+.intro__item {
     display: flex;
     width: 1249px;
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: 0 auto;    
+    justify-content: space-between;    
 }
 
 .intro__info {
-    max-width: 595px;
+    width: 595px;    
 }
 
 .intro__heading {
@@ -387,10 +354,9 @@
 }
 
 .feature__products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 19px;
-    margin: 0;   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);       
+    gap: 19px;      
 }
 
 .feature__product {
@@ -399,7 +365,9 @@
     height: 290px;
     object-fit: cover;
     object-position: 0% 50%;
-    transition: 1s;  
+    transition: 1s; 
+    cursor: pointer;
+
 }
 
 .feature__product:hover {
