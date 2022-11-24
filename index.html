@@ -28,6 +28,7 @@
             </ul>
          </nav>
       </header>
+      <main class="main">
       <section class="intro">
          <div class="intro__content">
             <div class="intro__info">
@@ -90,7 +91,7 @@
             </li>
          </ul>
       </section>
-      <section class="feature"  id="feature">
+      <section class="feature" id="feature">
          <div class="feature__header">
             <h2 class="feature__heading">feature products</h2>
             <p class="feature__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed
@@ -101,19 +102,19 @@
          <div class="filter">
             <ul class="filter__list">
                <li class="filter__item">
-                  <a class="filter_link filter__link_active" href="#">all</a>
+                  <a class="filter__link filter__link_active" href="#">all</a>
                </li>
                <li class="filter__item">
-                  <a class="filter_link" href="#">print template</a>
+                  <a class="filter__link" href="#">print template</a>
                </li>
                <li class="filter__item">
-                  <a class="filter_link" href="#">web template</a>
+                  <a class="filter__link" href="#">web template</a>
                </li>
                <li class="filter__item">
-                  <a class="filter_link" href="#">user interface</a>
+                  <a class="filter__link" href="#">user interface</a>
                </li>
                <li class="filter__item">
-                  <a class="filter_link" href="#">mock-up</a>
+                  <a class="filter__link" href="#">mock-up</a>
                </li>
             </ul>
          </div>
@@ -156,33 +157,85 @@
                   </li>
                </ul>
             </div>
-            <div class="team__others">
-               <div class="team__other">
+            <ul class="team__others">
+               <li class="team__other">
                   <img class="team__other-photo" src="./images/sokina_jue.jpg" alt="Sokina Jue">
                   <span class="team__other-name">Sokina Jue</span>
-               </div>
-               <div class="team__other">
+               </li>
+               <li class="team__other">
                   <img class="team__other-photo" src="./images/ivan_ivanov.jpg" alt="Ivan Ivanov">
                   <span class="team__other-name">Ivan Ivanov</span>
-               </div>
-               <div class="team__other">
+               </li>
+               <li class="team__other">
                   <img class="team__other-photo" src="./images/katya_avilova.jpg" alt="Katya Avilova">
                   <span class="team__other-name">Katya Avilova</span>
-               </div>
-               <div class="team__other">
+               </li>
+               <li class="team__other">
                   <img class="team__other-photo" src="./images/petr_petrov.jpg" alt="Petr Petrov">
                   <span class="team__other-name">Petr Petrov</span>
-               </div>
-            </div>
+               </li>
+            </ul>
          </div>
       </section>
       <section class="subscribe">
         <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
         <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
         <form class="subscribe__form" action="#" method="GET">
-            <input class="subscribe__input" type="email" name="email" id="email" placeholder="Email Address...">
+            <input class="subscribe__input" type="email" name="email" id="subscribe__input" placeholder="Email Address...">
             <button class="subscribe__button" type="submit">subscribe</button>
         </form>
-    </section>
-   </body>
+      </section>
+      <section class="feedback">
+         <div class="feedback__info">
+            <h2 class="feedback__heading">get in touch</h2>
+            <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+               incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.
+               ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.
+            </p>
+            <hr class="feedback__line">
+         </div>
+         <div class="feedback__body">
+            <form class="feedback__form">
+               <input class="feedback__name" type="text" placeholder="Name" name="name">
+               <input class="feedback__email" type="email" placeholder="Your Mail" name="email" id="email">
+               <textarea class="feedback__textarea" name="textarea" id="#" cols="30" rows="10" placeholder="Type your message"></textarea>
+               <button class="feedback__button" type="submit">Send message</button>
+            </form>
+            <div class="contacts">
+               <h3 class="contacts__info">Contact info</h3>
+               <address class="contacts__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</address>
+               <a class="contacts__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
+               <a class="contacts__tel" href="tel:(+88)01761746373">(+88) 017 617 46373</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__info">
+         <p class="footer__copyright">&copy; Copyright @Junaed 2016, All rights reserved.</p>
+         <ul class="footer__social">
+            <li class="footer__list">
+               <a class="footer__link" target="_blank" href="https://twitter.com">
+               <img class="footer__logo" src="./images/twitter.svg" alt="Twitter icon">
+               </a>
+            </li>
+            <li class="footer__list">
+               <a class="footer__link" target="_blank" href="https://linkedin.com">
+               <img class="footer__logo" src="./images/linkedin.svg" alt="Linkedin icon">
+               </a>
+            </li>
+            <li class="footer__list">
+               <a class="footer__link" target="_blank" href="https://plus.google.com">
+               <img class="footer__logo" src="./images/google-plus.svg" alt="Google plus icon">
+               </a>
+            </li>
+            <li class="footer__list">
+               <a class="footer__link" target="_blank" href="https://facebook">
+               <img class="footer__logo" src="./images/facebook.svg" alt="Facebook icon">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </footer>
+</body>
 </html>
