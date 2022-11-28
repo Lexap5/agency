@@ -14,7 +14,7 @@
          <nav class="site-menu">
             <ul class="site-menu__list">
                <li class="site-menu__item">
-                  <a class="site-menu__link site-menu__active" href="#">Home</a>
+                  <a class="site-menu__link" href="#">Home</a>
                </li>
                <li class="site-menu__item">
                   <a class="site-menu__link" href="#feature">Portfolio</a>
@@ -23,7 +23,7 @@
                   <a class="site-menu__link" href="#about_us">About us</a>
                </li>
                <li class="site-menu__item">
-                  <a class="site-menu__link" href="#">Contact</a>
+                  <a class="site-menu__link" href="#contact">Contact</a>
                </li>
             </ul>
          </nav>
@@ -185,7 +185,7 @@
             <button class="subscribe__button" type="submit">subscribe</button>
         </form>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="contact">
          <div class="feedback__info">
             <h2 class="feedback__heading">get in touch</h2>
             <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
@@ -196,9 +196,9 @@
          </div>
          <div class="feedback__body">
             <form class="feedback__form">
-               <input class="feedback__name" type="text" placeholder="Name" name="name">
-               <input class="feedback__email" type="email" placeholder="Your Mail" name="email" id="email">
-               <textarea class="feedback__textarea" name="textarea" id="#" cols="30" rows="10" placeholder="Type your message"></textarea>
+               <input class="feedback__name" type="text" placeholder="Name" name="name" minlength="5" maxlength="40" required>
+               <input class="feedback__email" type="email" placeholder="Your Mail" name="email" id="email" required>
+               <textarea class="feedback__textarea" name="textarea" id="#" cols="30" rows="10" placeholder="Type your message" minlength="5" required></textarea>
                <button class="feedback__button" type="submit">Send message</button>
             </form>
             <div class="contacts">
