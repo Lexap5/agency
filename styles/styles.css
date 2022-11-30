@@ -64,7 +64,7 @@
     
     .header {    
         position: fixed;
-        padding-top: 29px;
+        padding-top: 0;
         background-color: #F6F2F2;
         width: 100%;
         z-index: 5;
