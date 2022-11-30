@@ -818,7 +818,7 @@
     }
 
     .team__heading {
-        margin: 50px 0 44px 0; 
+        margin: 90px 0 44px 0; 
         text-align: center;        
     }
 
@@ -1212,6 +1212,11 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .feedback {        
+        padding-top: 30px;             
+    }
+}
 /* Footer */
 .footer {
     display: flex;    
