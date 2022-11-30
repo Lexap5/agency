@@ -6,7 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./styles/normalize.css">
       <link rel="stylesheet" href="./styles/styles-fonts.css">
-      <link rel="stylesheet" href="./styles/styles.css">
+      <link rel="stylesheet" href="./styles/styles.css">      
+      <link type="Image/x-icon" href="./images/favicon.png" rel="icon">
+      <script defer src="./js/burger-menu.js"></script>
       <title>Agency Landing</title>
    </head>
    <body class="root">
@@ -26,7 +28,24 @@
                   <a class="site-menu__link" href="#contact">Contact</a>
                </li>
             </ul>
-         </nav>
+         </nav>         
+         <nav class="burger-menu">
+            <button class="burger-menu__button"></button>
+            <ul class="burger-menu__list burger-menu__hide">
+               <li class="burger-menu__item">
+                  <a class="burger-menu__link" href="#">Home</a>
+               </li>
+               <li class="burger-menu__item">
+                  <a class="burger-menu__link" href="#feature">Portfolio</a>
+               </li>
+               <li class="burger-menu__item">
+                  <a class="burger-menu__link" href="#about_us">About us</a>
+               </li>
+               <li class="burger-menu__item">
+                  <a class="burger-menu__link" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </nav>      
       </header>
       <main class="main">
       <section class="intro">
@@ -195,7 +214,7 @@
             <hr class="feedback__line">
          </div>
          <div class="feedback__body">
-            <form class="feedback__form">
+            <form class="feedback__form" action="#" method="GET">
                <input class="feedback__name" type="text" placeholder="Name" name="name" minlength="5" maxlength="40" required>
                <input class="feedback__email" type="email" placeholder="Your Mail" name="email" id="email" required>
                <textarea class="feedback__textarea" name="textarea" id="#" cols="30" rows="10" placeholder="Type your message" minlength="5" required></textarea>

@@ -57,92 +57,10 @@
     transition: .3s ease;
 }
 
-@media screen and (max-width: 800px) {   
-    .site-menu {      
-        display: none;        
-    }  
-    
-    .header {    
-        position: fixed;
-        padding-top: 29px;
-        background-color: #F6F2F2;
-        width: 100%;
-        z-index: 5;
-    } 
-}
-
-/* Burger-menu */
-.burger-menu {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 1249px;
-    min-height: 89px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: rgba(0,0,0,0.8);   
-}
-
-.burger-menu__button {
-    display: block;
-    width: 300px;
-    height: 80px;
-    background-image: url('../images/menu-icon.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border-radius: 5px;
-    border: none;
-}
-
-.burger-menu__list {
-    position: absolute;
-    top: 100%;
-    display: flex;
-    flex-direction: column;    
-    justify-content: center; 
-    margin: 0;
-    padding: 0;    
-    list-style: none;
-    background-color: rgba(0,0,0,0.8);
-    z-index: 1; 
-}
-
-.burger-menu__item {
-    display: flex;    
-    align-items: stretch;
-    min-height: 89px;
-}
-
-.burger-menu__link {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;    
-    padding: 0 24px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #E0E0E0;
-    letter-spacing: 1.2px;
-    transition: .3s ease;       
-}
-
-.burger-menu__hide {
-    display: none;
-}
-
-.burger-menu__item:hover {
-    background-color: #ff3f40;
-    transition: .3s ease;    
-}
-
-@media screen and (min-width: 800px) {
-    .burger-menu {
-        display: none;
-    }  
+@media screen and (max-width: 600px) {   
+    .site-menu__list {      
+        margin-left: 0;        
+    }    
 }
 
 /* Main */
@@ -246,12 +164,6 @@
 }
 
 @media screen and (max-width: 800px) {   
-    .intro {
-        display: block;
-        width: 100%;
-        background-color: #F6F2F2;
-        padding: 202px 0 110px;       
-    }
     .intro__info {
         width: 100%;
         margin-bottom: 80px;
